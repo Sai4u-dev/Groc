@@ -1,0 +1,14 @@
+{
+  "installation": {
+    "version": "21.0.3",
+    "plugins": {
+      "@nx/eslint": "21.0.3",
+      "@nx/jest": "21.0.3",
+      "@nx/cypress": "21.0.3",
+      "@nx/expo": "21.0.3",
+      "@nx/react-native": "21.0.3"
+    }
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "nxCloudId": "6828e766ac588c4ae56f716b"
+}
