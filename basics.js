@@ -84,7 +84,7 @@ console.log("/---------------------------------------/");
 // Write a function that returns the maximum value in an array of integers. Assume the array is non-empty.
 function find_max(arr) {
   let max = Math.max(...arr);
-  return `The Highest Element in the array ==> [${arr}] ===> ${max}`;
+  console.log(`The Highest Element in the array ==> [${arr}] ===> ${max}`);
 }
 
 find_max([1, 2, 3]);
@@ -108,7 +108,8 @@ function count_evens(arr) {
       count++;
     }
   }
-  return `The Count of Even Numbers in Array ==> [${arr}] is ${count}.`;
+  console.log(`The Count of Even Numbers in Array ==> [${arr}] is ${count}.`);
+  ;
 }
 
 count_evens([1, 2, 3, 4]); 
@@ -133,7 +134,8 @@ function reverse_array(arr) {
       }
     }
   }
-  return `The Reversed array for ==> [${arr}] ==> [${newArr}].`;
+  console.log(`The Reversed array for ==> [${arr}] ==> [${newArr}].`);
+  
 }
 reverse_array([1, 2, 3]) 
 reverse_array([4, 5, 6, 7])  
@@ -162,16 +164,17 @@ function is_sorted(arr) {
   } 
   return `The Given array ==> [${arr}] is Sorted.`;
 }
-is_sorted([1, 2, 3, 4]) 
-is_sorted([1, 3, 2]) 
-is_sorted([]) 
-is_sorted([5]) 
-is_sorted([1, 2, 2, 3]) 
-is_sorted([10, 9, 8]) 
-is_sorted([-1, 0, 1]) 
-is_sorted([1, 1, 1, 1]) 
-is_sorted([3, 2, 1]) 
-is_sorted([2, 3, 5, 1]) 
+console.log(is_sorted([1, 2, 3, 4]))
+console.log(is_sorted([1, 3, 2]) );
+console.log(is_sorted([]) );
+console.log(is_sorted([5]));
+console.log(is_sorted([1, 2, 2, 3]) );
+console.log(is_sorted([10, 9, 8]) );
+console.log(is_sorted([-1, 0, 1]));
+console.log(is_sorted([1, 1, 1, 1]) );
+console.log(is_sorted([3, 2, 1]) );
+console.log(is_sorted([2, 3, 5, 1]) );
+
 
 console.log("/---------------------------------------/")
 
@@ -182,16 +185,17 @@ function count_occurrences(arr, k) {
     if (k === arr[i]) { count++}
   } return `The Count of ${k} in The Array ${arr} is ${count}.`;
 }
-count_occurrences([1, 2, 3, 2, 2], 2) // 3  
-count_occurrences([1, 1, 1, 1], 1) // 4  
-count_occurrences([0, 0, 0], 1) // 0  
-count_occurrences([], 5) // 0  
-count_occurrences([5], 5) // 1  
-count_occurrences([1, 2, 3], 4) // 0  
-count_occurrences([-1, -1, 0], -1) // 2  
-count_occurrences([10, 20, 30, 10], 10) // 2  
-count_occurrences([3, 4, 5, 3], 3) // 2  
-count_occurrences([7, 8, 9], 10) // 0
+console.log(count_occurrences([1, 2, 3, 2, 2], 2)); // 3  
+console.log(count_occurrences([1, 1, 1, 1], 1));
+console.log(count_occurrences([0, 0, 0], 1))
+console.log(count_occurrences([], 5))
+console.log(count_occurrences([5], 5))
+console.log(count_occurrences([1, 2, 3], 4) );
+console.log(count_occurrences([-1, -1, 0], -1) );
+console.log(count_occurrences([10, 20, 30, 10], 10) );
+console.log(count_occurrences([3, 4, 5, 3], 3) );
+console.log(count_occurrences([7, 8, 9], 10));
+
 console.log("/---------------------------------------/");
 // Write a function that returns a new array with only the non-negative numbers (0 or greater) from the input array.
 function filter_non_negatives(arr) {
@@ -201,7 +205,8 @@ function filter_non_negatives(arr) {
       nonNegatives.push(arr[i])
     }
   }
-  return `The Non-Negatives for the array [${arr}] is [${nonNegatives}].`;
+  console.log(`The Non-Negatives for the array [${arr}] is [${nonNegatives}].`);
+  ;
 }
 filter_non_negatives([1, -1, 2, -2]) // [1, 2]  
 filter_non_negatives([-5, -4, -3]) // []  
@@ -221,16 +226,16 @@ function find_index(arr, val) {
     if (arr[i] === val) {return `The index of Value ${val} in [${arr}] is at ${i}`; break;}
   } return `Not Found index in given array.`
 }
-find_index([1, 2, 3], 2) // 1  
-find_index([5, 6, 7], 8) // -1  
-find_index([10, 20, 30, 20], 20) // 1  
-find_index([], 1) // -1  
-find_index([0], 0) // 0  
-find_index([1, 1, 1], 1) // 0  
-find_index([-1, -2, -3], -2) // 1  
-find_index([2, 3, 4, 5], 4) // 2  
-find_index([100, 200, 300], 100) // 0  
-find_index([7, 8, 9], 10) // -1
+console.log(find_index([1, 2, 3], 2));
+console.log(find_index([5, 6, 7], 8));
+console.log(find_index([10, 20, 30, 20], 20) );
+console.log(find_index([], 1));
+console.log(find_index([0], 0) );
+console.log(find_index([1, 1, 1], 1) )
+console.log(find_index([-1, -2, -3], -2) );
+console.log(find_index([2, 3, 4, 5], 4) );
+console.log(find_index([100, 200, 300], 100) );
+console.log(find_index([7, 8, 9], 10));
 
  console.log("/---------------------------------------/")
 // Write a function that returns True if there are any duplicate elements in the array, and False otherwise.
@@ -243,16 +248,26 @@ function has_duplicates(arr) {
     }
   } return `The Gievn array [${arr}] Does Not Contains any Duplicates.`;
 }
-has_duplicates([1, 2, 3]) // False  
-has_duplicates([1, 1, 2]) // True  
-has_duplicates([]) // False  
-has_duplicates([0, 0]) // True  
-has_duplicates([5, 6, 7, 5]) // True  
-has_duplicates([8, 9, 10]) // False  
-has_duplicates([100, 200, 100]) // True  
-has_duplicates([-1, -2, -1]) // True  
-has_duplicates([1]) // False  
-has_duplicates([3, 3, 3, 3]) // True
+console.log(has_duplicates([1, 2, 3]));
+ // False  
+console.log(has_duplicates([1, 1, 2]));
+ // True  
+console.log(has_duplicates([]));
+ // False  
+console.log(has_duplicates([0, 0]));
+ // True  
+console.log(has_duplicates([5, 6, 7, 5]));
+ // True  
+console.log(has_duplicates([8, 9, 10]) );
+// False  
+console.log(has_duplicates([100, 200, 100]));
+ // True  
+console.log(has_duplicates([-1, -2, -1]) );
+// True  
+console.log(has_duplicates([1]));
+ // False  
+console.log(has_duplicates([3, 3, 3, 3]) );
+// True
 
 
 console.log("/---------------------------------------/")
@@ -263,9 +278,8 @@ function double_elements(arr) {
   for (let i = 0; i < arr.length; i++) {
     newarr[i] = newarr[i] + newarr[i];
   }
-  return `The solution for given [${arr}] is [${newarr}].`;
+  console.log( `The solution for given [${arr}] is [${newarr}].`);
 }
-console.log("/---------------------------------------/")
 
 double_elements([1, 2, 3]) // [2, 4, 6]  
 double_elements([0, 0]) // [0, 0]  
@@ -278,7 +292,6 @@ double_elements([100, 200, 300]) // [200, 400, 600]
 double_elements([3, 6, 9]) // [6, 12, 18]  
 double_elements([-10]) // [-20]
 
-console.log("/---------------------------------------/")
 // Two SUM PROGRAM BEGINNING
 /* Two SUM PSEDOCODE 
 FUNCTION twoSum(nums, target):
@@ -301,11 +314,11 @@ var twoSumApp1 = function(nums, target) {
         map.set(nums[i], i);        
     } return 'Not Matched...';
 }
-twoSumApp1([1,0,-1,0,-2,2,90,-9],88);
-twoSumApp1([3,2,4],6);
-twoSumApp1([3,2],5);
+console.log(twoSumApp1([1,0,-1,0,-2,2,90,-9],88));
+console.log(twoSumApp1([3,2,4],6));
+console.log(twoSumApp1([3,2],5));
+
 // TWO SUM PROGRAM ENDING
-console.log("/---------------------------------------/")
 //----------------------------------------------------------------------------------------//
 
 // TWO SUM PROGRAM SECOND APPROACH
@@ -325,11 +338,11 @@ function twoSum(nums, k) {
     }
   } return "Not Matched."
 }
-twoSum([1,0,-1,0,-2,2,90,-9], 0);
-twoSum([3,2,4],6);
-twoSum([3,2],5);
+console.log(twoSum([1,0,-1,0,-2,2,90,-9], 0));
+console.log(twoSum([3,2,4],6));
+console.log(twoSum([3,2],5));
+
 // TWO SUM PROGRAM SECOND APPROACH ENDING
-console.log("/---------------------------------------/");
 //----------------------------------------------------------------------------------------//
 
 //  Four Sum Program Beginning
@@ -400,9 +413,9 @@ function fourSum(nums, target) {
             }
         }
     }
-    return res;
+    console.log(res, "FourSum")
 }
-fourSum([1,0,-1,0,-2,2,90,-9], 0);
+fourSum([1,0,-1,0,-2,2,90,-9], 0)
 fourSum([2,2,2,2,2], 8);
 fourSum([1, 0, -1, 0, -2, 2], 0);
 fourSum([-3, -1, 0, 2, 4, 5], 6);
@@ -426,7 +439,8 @@ function reverseString(s) {
   for (let i = s.length - 1; i >= 0; i--) {
     newstr+=s[i]
   }
-  return `The Reversed String for "${s}" is "${newstr}".`
+  console.log(`The Reversed String for "${s}" is "${newstr}".`);
+  
 }
 reverseString("hello") //"olleh"
 reverseString("") //""
@@ -451,10 +465,12 @@ function isPalindrome(str) {
   for (let i = str.length - 1; i >= 0; i--) {
     newstr += str[i];
   }
-    return `Given ==> '${str}' reversed is ==> '${newstr}' so ` + (str === newstr ? 'Strings are Palindromes.' : 'Strings are not Palindromes.');
+  return `Given ==> '${str}' reversed is ==> '${newstr}' so ` + (str === newstr ? 'Strings are Palindromes.' : 'Strings are not Palindromes.')
 }
-isPalindrome("madam") // true
-isPalindrome("racecar") // true
+console.log(isPalindrome("madam"));
+ // true
+console.log(isPalindrome("racecar") );
+// true
 isPalindrome("a") // true
 isPalindrome("") // true
 isPalindrome("abc") // false
@@ -569,7 +585,7 @@ function replaceSpaces(str, char) {
   for (let i = 0 ; i < str.length; i++) {
     {str[i] === " " ? replacementChar += char : replacementChar += str[i]}
   }
-  return `The original [${str}] is updated to [${replacementChar}]`;
+  console.log(`The original [${str}] is updated to [${replacementChar}]`)
 }
 replaceSpaces("hello world", '_') // "hello_world"
 replaceSpaces("", "_") // ""
@@ -618,7 +634,8 @@ function removeDuplicates(str) {
       unique += str[i];
     }
   }
-  return `The removed duplicates for [${str}] is [${unique}].`;
+  console.log(`The removed duplicates for [${str}] is [${unique}].`);
+  
 }
 
 removeDuplicates("aabbcc") // "abc"
