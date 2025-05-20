@@ -63,4 +63,9 @@ function fin(num) {
     if (num === 2) return 1;
     return fin(num - 1) + fin(num - 2);
 }
+console.log(fin(5)); // 3function fin(num) {
+    if (num === 1) return 1;
+    if (num === 2) return 1;
+    return fin(num - 1) + fin(num - 2);
+}
 console.log(fin(5)); // 3
