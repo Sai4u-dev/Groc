@@ -63,9 +63,11 @@ function fin(num) {
     if (num === 2) return 1;
     return fin(num - 1) + fin(num - 2);
 }
-console.log(fin(5)); // 3function fin(num) {
-    if (num === 1) return 1;
-    if (num === 2) return 1;
-    return fin(num - 1) + fin(num - 2);
+console.log(fin(5)); 
+
+function nEvenFibonacciNum(a, b, n) {
+    if (n === 0) return a;
+    if (n === 1) return b;
+    console.log(a,'a', b, 'b', n, 'n');
+    return nEvenFibonacciNum(b, a + b, n - 1);
 }
-console.log(fin(5)); // 3

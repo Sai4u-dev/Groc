@@ -313,12 +313,21 @@ console.log(buffer, view);
 
 const mathProperties = Object.getOwnPropertyNames(Math);
 console.log(mathProperties);
-let b = 4
-Math.sqrt(16)
+
+function arraysplice() {
+  const arr = [1, 2, 3, 4, 5];
+  console.log(arr.splice(0, 2)); // [1, 2]
+  console.log(arr); // [3, 4, 5]
+}
+arraysplice();
 
 
-
-
+function arrayslice() {
+  const arr = [1, 2, 3, 4, 5];
+  console.log(arr.slice(0, 2)); // [1, 2]
+  console.log(arr); // [1, 2, 3, 4, 5]
+}
+arrayslice();
 
 
 
