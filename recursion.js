@@ -5,7 +5,7 @@ const traverse = (num) => {
         return;
     }
     console.log("Current number:", num);
-  return traverse(num -1);
+    return traverse(num - 1);
 }
 traverse(number);
 
@@ -14,7 +14,7 @@ function factorial(num, total) {
     if (num === 0) {
         return total;
     }
-    return factorial(num - 1, num * total); 
+    return factorial(num - 1, num * total);
 }
 const num = 5;
 console.log("Factorial of", num, "is ", factorial(5, 1));
